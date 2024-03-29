@@ -1,0 +1,12 @@
+.project-card {
+  border: 20px solid #bfbaba; 
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.project-card .card-img-top {
+  height: 350px; 
+  width: 100%; 
+  object-fit: cover; 
+}
+

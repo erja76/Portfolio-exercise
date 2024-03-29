@@ -7,6 +7,43 @@
   pointer-events: none;
 }
 
+.navbar {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin-right: 10px;
+}
+
+h2, .card-title {
+  text-align: center;
+  font-size: 40px;
+  color: rgba(43, 0, 255, 0.753);
+}
+
+.projects .card-title {
+  color: rgb(44, 41, 41);
+}
+
+.work-experience-container .accordion-container {
+  text-align: center; /* Align content horizontally at the center */
+}
+
+.work-experience-container .accordion-container button {
+  padding: 10px 20px; 
+  margin: 5px; 
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
