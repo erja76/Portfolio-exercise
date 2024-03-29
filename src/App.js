@@ -10,11 +10,11 @@ function App() {
       <div>
         <Navbar />
         <div style={{ padding: '20px' }}>
-        <PersonalInfo />
+        <PersonalInfo /></div>
         <Education />
         <Projects />
-        <WorkExperience />
-        </div>
+        <div style={{ padding: '20px' }}>
+        <WorkExperience /></div>
         <footer style={{ backgroundColor: 'lightgray', padding: '10px', textAlign: 'center' }}>
           <strong>This is the end of that page and there is nothing more to it.</strong>
         </footer>

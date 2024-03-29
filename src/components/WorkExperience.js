@@ -17,7 +17,7 @@ function WorkExperience() {
             <button onClick={() => toggleAccordion(1)} style={{ padding: '5px' }}>Author</button>
             {openAccordion === 1 && (
               <div>
-                <p style={{ marginTop: '10px' }}>Writer of stories, creator of characters, imaginator of worlds.</p>
+                <p style={{ marginTop: '10px' }}>Writer of stories, creator of characters, inventor of worlds.</p>
               </div>
             )}
           </div>
