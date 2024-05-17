@@ -8,16 +8,16 @@ const PersonalInfo = () => {
                 <div className="row no-gutters">
                     <div className="col-md-4">
                         <img src={skydive} alt="sitfly"
-                        className="img-fluid rounded-start"
+                            className="img-fluid rounded-start"
                         />
-                        
+
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
-                        <h2 className="card-title">Personal Information</h2>
+                            <h2 className="card-title">Personal Information</h2>
                             <p></p>
                             <p className="card-text">
-                            <div style={{ height: '30px' }} />
+                                <div style={{ height: '30px' }} />
                                 <strong>Name: </strong> Erja Pisilä
                             </p>
                             <p className="card-text">

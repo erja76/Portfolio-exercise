@@ -1,3 +1,12 @@
+.navbar {
+  background-color: #333;
+  position: fixed;
+}
+
+.navbar li {
+  display: inline;
+} 
+
 .App {
   text-align: center;
 }
@@ -7,25 +16,10 @@
   pointer-events: none;
 }
 
-.navbar {
-  background-color: lightgray;
-  padding: 10px;
-  text-align: center;
-}
-
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar li {
-  display: inline;
-  margin-right: 10px;
-}
-
-nav .navbar li {
-  color: rgba(43, 0, 255, 0.753);
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 h2, .card-title {
@@ -34,19 +28,24 @@ h2, .card-title {
   color: rgba(43, 0, 255, 0.753);
 }
 
+.project-card {
+  width: fit-content;
+  width: 500px;
+}
+
 .projects .card-title {
+  font-size: 25px;
   color: rgb(44, 41, 41);
 }
 
 .work-experience-container .accordion-container {
-  text-align: center; /* Align content horizontally at the center */
+  text-align: center;
 }
 
 .work-experience-container .accordion-container button {
   padding: 10px 20px; 
   margin: 5px; 
 }
-
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -66,7 +65,7 @@ h2, .card-title {
 }
 
 .App-link {
-  color: #61dafb;
+  color: rgba(43, 0, 255, 0.753);
 }
 
 @keyframes App-logo-spin {
@@ -77,3 +76,79 @@ h2, .card-title {
     transform: rotate(360deg);
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .project-card img {
+    display: none;
+  }
+
+  .carousel-item {
+    max-width: 100%; 
+  }
+
+  #project-card-content {
+    max-width: auto; 
+    margin: 0 auto; 
+    display: inline-block;
+  }
+
+  .navbar-nav li {
+    display: block; 
+    margin-bottom: 10px; 
+  }
+
+  .navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.projects {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mb-4-card {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.project-card {
+  width: 300px; 
+  margin: 0 auto; 
+  margin-bottom: 20px;
+  align-items: center;
+  margin-right: 50px;
+}
+
+#project-card-content {
+  display: inline-block;
+  max-width: 80%; 
+}
+
+@media screen and (max-width: 600px) {
+  .project-card {
+    width: 80%; 
+  }
+
+  #project-card-content {
+    max-width: 100%; 
+  }
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+}
+
+.carousel-item {
+  width: 100%;
+}
+

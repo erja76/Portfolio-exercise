@@ -3,39 +3,39 @@ import React from "react";
 const Education = () => {
     const educations = [
         {
-            id: 1, 
+            id: 1,
             institution: 'Raahe High School',
             degree: 'Matriculation Examination',
-            year: '1945-1948',
+            year: '1992-1995',
             description: 'Back in the day when I was still young and actually managed to learn something...'
         },
         {
-            id: 2, 
+            id: 2,
             institution: 'Helsinki Open University',
             degree: 'Communication Studies',
-            year: '1966',
+            year: '1996',
             description: 'Back when communication studies were all the rage, yo.'
         },
         {
-            id: 3, 
+            id: 3,
             institution: 'University of Sussex',
             degree: 'Cultural and Media Studies',
-            year: '1980-1983',
+            year: '1997-2000',
             description: 'Only the best uni in the whole of UK.'
         },
         {
-            id: 4, 
+            id: 4,
             institution: 'YSAO',
             degree: 'Vet Tech Studies',
-            year: '1990-1992',
+            year: '2012-2013',
             description: 'Someone needs to know how to take care of animals, even though the actual work does not pay.'
         },
         {
-            id: 5, 
+            id: 5,
             institution: 'HAMK',
             degree: 'Nerdy IT Studies',
             year: '2022-2025',
-            description: 'Now who am I kidding with this?'
+            description: 'Now time for something new, aye?'
         }
     ];
 
@@ -50,16 +50,16 @@ const Education = () => {
                                 <h5 className="=card-title mb-0">{education.institution}</h5>
                             </div>
                             <div className="card-body">
-                            <h6 className="=card-subtitle mb-2 text-muted">
-                                {education.degree}</h6>                                                                                          
-                            <p className="card-text">{education.description}</p>
-                            </div>    
-                        <div className="card-footer text-muted">       
-                            <small>{education.year}</small>
-                        </div>
+                                <h6 className="=card-subtitle mb-2 text-muted">
+                                    {education.degree}</h6>
+                                <p className="card-text">{education.description}</p>
+                            </div>
+                            <div className="card-footer text-muted">
+                                <small>{education.year}</small>
+                            </div>
                         </div>
                     </div>
-            ))}
+                ))}
             </div>
         </div>
     );

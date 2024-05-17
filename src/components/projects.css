@@ -1,12 +1,55 @@
 .project-card {
-  border: 20px solid #bfbaba; 
-  margin-left: 150px;
-  margin-right: 150px;
+  width: 80%;  
+  max-width: 600px; 
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 20px solid #bfbaba;
 }
 
 .project-card .card-img-top {
-  height: 350px; 
-  width: 100%; 
-  object-fit: cover; 
+  height: auto;
+  width: 100%;
+  object-fit: cover;
 }
 
+@media only screen and (max-width: 768px) {
+  .project-card {
+    width: 90%;  
+  }
+
+  #project-card-content {
+    max-width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-card {
+    width: 100%;
+  }
+
+  #project-card-content {
+    max-width: 100%;
+  }
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mb-4-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+#project-card-content {
+  display: inline-block;
+  max-width: 80%;
+}
